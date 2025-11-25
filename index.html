@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Shadman <span>Rafid</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#work" class="nav-link">Work</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Hello, I'm <span class="text-white">Shadman Rafid</span></span>
+                <h1 class="hero-title">Building Digital <span class="gradient-text">Experiences</span></h1>
+                <p class="hero-description">
+                    I'm a passionate developer crafting stunning and functional websites. 
+                    Let's turn your vision into reality.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                    <a href="#work" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <img src="img/profile-pic (1).png" alt="Profile Picture" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">HTML5</div>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">CSS3</div>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">JS</div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">React</div>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">Node</div>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">UI/UX</div>
+                    <h3>Design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section-title">Services <span class="gradient-text">Offered</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and performant websites using modern technologies.</p>
+                </div>
+                <div class="service-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and visually appealing user interfaces.</p>
+                </div>
+                <div class="service-card">
+                    <h3>SEO Optimization</h3>
+                    <p>Improving visibility and ranking on search engines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work" class="section work">
+        <div class="container">
+            <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Web Developer</h3>
+                        <span class="company">Tech Solutions Inc.</span>
+                        <p>Leading the frontend team, architecting scalable applications, and mentoring junior developers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Junior Developer</h3>
+                        <span class="company">Creative Agency</span>
+                        <p>Developed award-winning websites for various clients, focusing on animation and interactivity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="contact-wrapper">
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2025 Shadman Rafid. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
